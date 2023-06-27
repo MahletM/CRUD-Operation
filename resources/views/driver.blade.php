@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+<!--"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"-->
     <title>Smart Garbage</title>
   </head>
   <body>
     @include('navbar')
     @if($layout == 'index')
     <div class="container-fluid">
-        <h2 class="text-center alert alert-danger">Registration Form</h2>
+        <h2 class="text-center alert alert-danger">Driver Registration Form</h2>
         <div class="row">
             <section class="col">
             @include("driverlist")
@@ -26,7 +27,7 @@
 
     @elseif($layout == 'create')
   <div class="container-fluid">
-      <h2 class="text-center alert alert-danger">Registration Form</h2>
+      <h2 class="text-center alert alert-danger">Driver Registration Form</h2>
       <div class="row">
           <section class="col">
               @include("driverlist")
@@ -48,6 +49,10 @@
     <label >Last Name</label>
     <input name="lastName"  type="text" class="form-control"  placeholder="Enter Last Name">
   </div>
+  <div class="form-group">
+    <label >userName</label>
+    <input name="userName"  type="text" class="form-control"  placeholder="Enter Username">
+  </div>
 
   <div class="form-group">
     <label >Email</label>
@@ -68,7 +73,7 @@
 
   @elseif($layout == 'show')
   <div class="container-fluid">
-      <h2 class="text-center alert alert-danger">Registration Form</h2>
+      <h2 class="text-center alert alert-danger">Driver Registration Form</h2>
       <div class="row">
           <section class="col">
           @include("driverlist")
@@ -91,6 +96,10 @@
     <label >Last Name</label>
     <input value="{{ $driver->lastName }}" name="lastName"  type="text" class="form-control"  placeholder="Enter Last Name" readonly="">
   </div>
+  <div class="form-group">
+    <label >Username</label>
+    <input value="{{ $driver->userName }}" name="userName"  type="text" class="form-control"  placeholder="Enter Username" readonly="">
+  </div>
 
   <div class="form-group">
     <label >Email</label>
@@ -107,7 +116,7 @@
   </div>
   @elseif($layout == 'edit')
   <div class="container-fluid">
-      <h2 class="text-center alert alert-danger">Registration Form</h2>
+      <h2 class="text-center alert alert-danger">Driver Registration Form</h2>
       <div class="row">
           <section class="col">
           @include("driverlist")
@@ -128,6 +137,10 @@
   <div class="form-group">
     <label >Last Name</label>
     <input value="{{ $driver->lastName }}" name="lastName"  type="text" class="form-control"  placeholder="Enter Last Name" >
+  </div>
+  <div class="form-group">
+    <label >Username</label>
+    <input value="{{ $driver->userName }}" name="userName"  type="text" class="form-control"  placeholder="Enter Username" >
   </div>
 
   <div class="form-group">
@@ -155,3 +168,4 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
+

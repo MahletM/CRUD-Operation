@@ -9,7 +9,14 @@
         <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="{{ url('/create') }}">Create</a>
+        <a class="nav-link" href="{{ url('/create') }}">Register Driver</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ url('/createg') }}">Register Garbage and Garbage info</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ url('/createg') }}">Assign</a>
+      </li>
     </ul>
   </div>
 </nav>

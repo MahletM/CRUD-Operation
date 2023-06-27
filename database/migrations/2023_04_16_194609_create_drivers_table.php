@@ -18,8 +18,10 @@ class CreateDriversTable extends Migration
             $table->string('reg');
             $table->string('firstName');
             $table->string('lastName');
+            $table->string('userName');
             $table->string('email');
             $table->string('phonenumber');
+            $table->json('assignedto')->nullable();
             $table->timestamps();
         });
     }

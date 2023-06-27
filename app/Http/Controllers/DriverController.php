@@ -42,6 +42,7 @@ class DriverController extends Controller
         $driver->reg = $request->input('reg');
         $driver->firstName = $request->input('firstName');
         $driver->lastName = $request->input('lastName');
+        $driver->userName = $request->input('userName');
         $driver->email = $request->input('email');
         $driver->phonenumber = $request->input('phonenumber');
         $driver->save();
@@ -88,6 +89,7 @@ class DriverController extends Controller
         $driver->reg = $request->input('reg');
         $driver->firstName = $request->input('firstName');
         $driver->lastName = $request->input('lastName');
+        $driver->userName = $request->input('userName');
         $driver->email = $request->input('email');
         $driver->phonenumber = $request->input('phonenumber');
         $driver->save();

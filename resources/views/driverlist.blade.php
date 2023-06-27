@@ -4,8 +4,10 @@
         <th scope="col">ID</th>
         <th scope="col">First Name</th>
         <th scope="col">Last Name</th>
+        <th scope="col">Username</th>
         <th scope="col">Email</th>
         <th scope="col">Phone number</th>
+    
         <th scope="col">Action</th>
       </tr>
     </thead>
@@ -15,6 +17,7 @@
         <th>{{ $driver->reg }}</th>
         <td>{{ $driver->firstName }}</td>
         <td>{{ $driver->lastName }}</td>
+        <td>{{ $driver->userName }}</td>
         <td>{{ $driver->email }}</td>
         <td>{{ $driver->phonenumber}}</td>
         <td>
